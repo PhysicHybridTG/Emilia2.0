@@ -41,7 +41,7 @@ BOT = {}
 async def getstatus(client, message):
     sts_msg = await message.reply('Getting Details..')
     stats = await get_status()
-    await sts_msg.edit(f"Total Users {stats}")
+    await sts_msg.edit(f"Total Users {stats})
     
 @Client.on_message(filters.private & filters.command('broadcast') & filters.user(ADMINS) & filters.reply)
 async def broadcast(client, message):
