@@ -79,7 +79,7 @@ async def broadcast(client, message):
             print(e)
             pass
             
-    text = f"""<b>Broadcast Completed</b>
+    text = f"""<b>Broadcast Completed !</b>
     
 Total users: {str(len(user_ids))}
 Blocked users: {str(blocked)}
